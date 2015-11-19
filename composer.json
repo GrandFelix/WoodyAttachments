@@ -1,0 +1,30 @@
+{
+    "name": "GrandFelix/WoodyAttachments",
+    "description": "WoodyAttachments file upload plugin for CakePHP 3",
+    "license": "MIT",
+    "authors": [
+        {
+          "name": "GrandFelix"
+        }
+    ],
+    "type": "cakephp-plugin",
+    "require": {
+        "php": ">=5.4.16",
+        "cakephp/cakephp": "~3.0",
+        "imagine/imagine": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "WoodyAttachments\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "WoodyAttachments\\Test\\": "tests",
+            "Cake\\Test\\": "./vendor/cakephp/cakephp/tests"
+        }
+    }
+}
