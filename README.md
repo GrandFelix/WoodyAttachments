@@ -9,7 +9,9 @@ imagine/imagine is used for image manipulation
 
 ## Installation
 
-add to composer "GrandFelix/WoodyAttachments": "*"
+```
+composer require GrandFelix/WoodyAttachments
+```
 
 run composer update
 
@@ -72,6 +74,9 @@ echo $this->Form->input('pdf',
     ]);
 ```         
 
-```
-composer require your-name-here/WoodyAttachments
-```
+## TODO
+ - A lot of code improvements because it was all created very fast
+ - Move file operations to other place..
+ - Create helper to render files automatically
+ - Recognize file type and use file operations for that file type...
+ - ...
