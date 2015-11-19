@@ -1,4 +1,4 @@
-# WoodyAttachments file upload plugin for CakePHP 3
+# WoodyAttachments CakePHP 3 plugin
 CakePHP 3 file upload plugin.
 
 ## Requirements
@@ -13,7 +13,12 @@ imagine/imagine is used for image manipulation
 composer require GrandFelix/WoodyAttachments
 ```
 
-run composer update
+run composer update in shell
+
+run migrations
+```
+bin/cake migrations migrate --plugin WoodyAttachments
+```
 
 ## How to use it
 Add this to your Table file:
@@ -74,9 +79,17 @@ echo $this->Form->input('pdf',
     ]);
 ```         
 
+And don't forget to add ['type' => 'file'] in $this->Form->create('ModelName', ['type' => 'file'])
+
+## Other
+ - Files are saved in webroot/{your_file_upload_folder_from_config}/{Year}/{Month}/{Model}/*
+ - when you delete item, files will also be deleted...
+
 ## TODO
  - A lot of code improvements because it was all created very fast
  - Move file operations to other place..
  - Create helper to render files automatically
+ - Administration controller
+ - Configurable file saving paths
  - Recognize file type and use file operations for that file type...
  - ...
