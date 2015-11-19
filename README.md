@@ -64,7 +64,7 @@ For multiple upload add this to your view file:
 echo $this->Form->input('images[]',
     [
         'multiple' => true,
-        'label' => 'Slike',
+        'label' => 'Pictures',
         'type' => 'file'
     ]);
 ```
@@ -74,10 +74,12 @@ or this for single upload:
 ```php
 echo $this->Form->input('pdf',
     [
-        'label' => 'PDF',
+        'label' => 'PDF file',
         'type' => 'file'
     ]);
-```         
+```
+
+Form input must have the same name as in configuration in Table when loading behavior. So in this example images and pdf
 
 And don't forget to add ['type' => 'file'] in $this->Form->create('ModelName', ['type' => 'file'])
 
