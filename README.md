@@ -83,6 +83,8 @@ Form input must have the same name as in configuration in Table when loading beh
 
 And don't forget to add ['type' => 'file'] in $this->Form->create('ModelName', ['type' => 'file'])
 
+Change main upload path in config/bootstrap.php
+
 ## Other
  - Files are saved in webroot/{your_file_upload_folder_from_config}/{Year}/{Month}/{Model}/*
  - when you delete item, files will also be deleted...
@@ -93,5 +95,5 @@ And don't forget to add ['type' => 'file'] in $this->Form->create('ModelName', [
  - Create helper to render files automatically
  - Administration controller
  - Configurable file saving paths
- - Recognize file type and use file operations for that file type...
+ - Recognize file type and use file operations for that file type
  - ...
